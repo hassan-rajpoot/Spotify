@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <link rel="stylesheet" href="Spotify.css">
+    <!-- <link rel="stylesheet" href="spotifymob.css"> -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href="https://open.spotify.com/"><img src="logo.png" alt="Spotify"></a> Spotify</li>
+            <li><a href="https://open.spotify.com/search">Search</a></li>
+            <li><a
+                    href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F">Login</a><input
+                    type="text" placeholder="Search..." id="searchBar"><button class="btn">Search</button>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h2>Find Your Soundtrack to a World of Music.</h2>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <a id="firstsong" href="https://www.youtube.com/watch?v=2Vv-BfVoq4g&ab_channel=EdSheeran"><img
+                            src="https://i.pinimg.com/originals/9a/22/fb/9a22fbaa1c35182063a67cae7913175c.jpg"
+                            alt="1"></a>
+                    <span class="songName">Perfect - Ed Sheeran</span>
+                    <span class="songlistplay"><span class="timestamp" id="timestamp1">04:39 <i id="1"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(0)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=-BjZmE2gtdo&ab_channel=TaylorSwiftVEVO"><img
+                            src="https://upload.wikimedia.org/wikipedia/en/6/62/Taylor_Swift_-_Lover_%28First_Dance_Remix%29.png"
+                            alt="2"></a>
+                    <span class="songName">Lover - Taylor Swift</span>
+                    <span class="songlistplay"><span class="timestamp">03:59 <i id="2"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(1)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=EUoe7cf0HYw&ab_channel=TaylorSwiftVEVO"><img src=""
+                            alt="3"></a>
+                    <span class="songName">Gorgeous - Taylor swift</span>
+                    <span class="songlistplay"><span class="timestamp">03:31 <i id="3"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(2)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=8CEJoCr_9UI&ab_channel=PinkSweats"><img
+                            src="https://c.saavncdn.com/013/At-My-Worst-feat-Kehlani--English-2021-20210205054341-500x500.jpg"
+                            alt="4"></a>
+                    <span class="songName">At My Worst - Pink Sweat$</span>
+                    <span class="songlistplay"><span class="timestamp">03:12 <i id="4"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(3)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=GxldQ9eX2wo&ab_channel=StephenSanchezVEVO"><img
+                            src="https://i.scdn.co/image/ab67616d0000b2738792c3e96f8ab97a767c5d0c" alt="5"></a>
+                    <span class="songName">Until I Found You - Stephen Sanchez</span>
+                    <span class="songlistplay"><span class="timestamp">02:56 <i id="5"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(4)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=_XBVWlI8TsQ&ab_channel=KaifiKhalil"><img
+                            src="https://c.saavncdn.com/464/Kahani-Suno-2-0-Urdu-2022-20230629194127-500x500.jpg"
+                            alt="6"></a>
+                    <span class="songName">Kahani Suno 2.0 - Kaifi Khalil</span>
+                    <span class="songlistplay"><span class="timestamp">02:54 <i id="6"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(5)'></i> </span></span>
+                </div>
+
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=VAdGW7QDJiU&ab_channel=T-Series"><img
+                            src="https://c.saavncdn.com/026/Chaleya-From-Jawan-Hindi-2023-20230814014337-500x500.jpg"
+                            alt="8"></a>
+                    <span class="songName">Chaleya - From "Jawan"</span>
+                    <span class="songlistplay"><span class="timestamp">03:08 <i id="7"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(6)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=3OymVeTN6Pw&ab_channel=NikkBrar"><img
+                            src="https://a10.gaanacdn.com/images/albums/11/7433011/crop_480x480_7433011.jpg"
+                            alt="9"></a>
+                    <span class="songName">Heeriye - Arijit Singh</span>
+                    <span class="songlistplay"><span class="timestamp">04:29 <i id="8"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(7)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=H2f7MZaw3Yo&ab_channel=SonyMusicIndiaVEVO"><img
+                            src="https://upload.wikimedia.org/wikipedia/en/3/3f/Samjhanwan.jpg" alt="10"></a>
+                    <span class="songName">Samjhawan - Arijit Singh</span>
+                    <span class="songlistplay"><span class="timestamp">04:25 <i id="9"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(8)'></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <a href="https://www.youtube.com/watch?v=mt9xg0mmt28&ab_channel=T-Series"><img
+                            src="https://c.saavncdn.com/223/Jab-We-Met-Hindi-2007-20221128170647-500x500.jpg"
+                            alt="1"></a>
+                    <span class="songName">Tum Se Hi - Jab We Met </span>
+                    <span class="songlistplay"><span class="timestamp">04:18 <i id="10"
+                                class="far songItemPlay fa-play-circle" onclick='getSong(9)'></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Perfect - Ed Sheeran</span>
+        </div>
+        <span id="Timer">0:0 / 4:39</span>
+    </div>
+    <script src="Spotify.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
